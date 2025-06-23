@@ -131,21 +131,22 @@
     let selectedTrack = '';
     let audioContext;
 
-    function selectSong(track) {
-      selectedTrack = track;
-      const audio = document.getElementById('music');
-      if (track === 'vintage') {
-        audio.src = 'Vintage Culture, Fideles & Be No Rain - Fallen Leaf (Massano Remix).mp3';
-      } else if (track === 'feid') {
-        audio.src = 'Feid - ANDO XXIL.mp3';
-      } else if (track === 'rkm') {
-        audio.src = 'rkm.mp3';
-      } else if (track === 'daddy') {
-        audio.src = 'Daddy Yankee.mp3';
-      }
-      document.getElementById('flyer').style.display = 'none';
-      document.getElementById('instructions').style.display = 'flex';
-    }
+  function selectSong(track) {
+  selectedTrack = track;
+  const audio = document.getElementById('music');
+  if (track === 'vintage') {
+    audio.src = "Vintage%20Culture,%20Fideles%20&%20Be%20No%20Rain%20-%20Fallen%20Leaf%20(Massano%20Remix).mp3";
+  } else if (track === 'feid') {
+    audio.src = "Feid%20-%20ANDO%20XXIL.mp3";
+  } else if (track === 'rkm') {
+    audio.src = "Rkm.mp3";
+  } else if (track === 'daddy') {
+    audio.src = "Daddy%20Yankee.mp3";
+  }
+  document.getElementById('flyer').style.display = 'none';
+  document.getElementById('instructions').style.display = 'flex';
+}
+
 
     function startExperience() {
       document.getElementById('instructions').style.display = 'none';
